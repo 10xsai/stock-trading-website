@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Reset Password
+{% endblock %}
+
+{% block main %}
+    <form action="/reset" method="POST">
+        <div class="form-group">
+            <input autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="old-password" placeholder="Previous Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="new-password" placeholder="New Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirm-password" placeholder="Confirm New Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit"> Reset </button>
+    </form>
+{% endblock %}

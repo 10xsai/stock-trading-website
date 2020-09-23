@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total Value</th>
+        </tr>
+        {% for transaction in transactions %}
+        <tr>
+            <td> {{ transaction["symbol"] }} </td>
+            <td> {{ transaction["SUM(shares)"] }} </td>
+            <td> {{ transaction["price"] }} </td>
+            <td> {{ transaction["SUM(shares)"] * transaction["price"] }} </td>
+        </tr>
+        {% endfor %}
+
+        <tr>
+            <td> CASH </td>
+            <td></td>
+            <td></td>
+            <td> {{ cash[0]["cash"] }} </td>
+        </tr>
+    </table>
+{% endblock %}
