@@ -11,7 +11,7 @@ Real time stock price information is obtained through an api key from IEX cloud.
 1. clone this repository using git command
 
 ```bash
-$ git clone https://github.com/krishnagottipalli/final_project_cs50.git project
+$ git clone https://github.com/krishnagottipalli/stock-trading-website.git
 ```
 
 2. create a virtual environment
