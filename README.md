@@ -17,12 +17,12 @@ $ git clone https://github.com/krishnagottipalli/stock-trading-website.git
 2. create a virtual environment
 ```bash
 $ cd project
-$ python3 -m venv venv
+$ python3 -m venv env
 ```
 
 3. activate the virtual environment
 ```bash
-$ source venv/bin/activate
+$ source env/bin/activate
 ```
 
 3. install flask
@@ -32,8 +32,9 @@ $ pip install flask
 
 4. initial setup
 ```python
-$ export FLASK_APP=app.py
+$ export FLASK_APP=application.py
 $ export FLASK_ENV=development
+$ export API_KEY={ api_key }
 ```
 
 5. run the application
